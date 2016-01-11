@@ -1,14 +1,23 @@
 {
     "name": "welcomattic/apache-tika-bundle",
-    "description": "Symfony Bundle for (php-apache-tika)[https://github.com/vaites/php-apache-tika]",
-    "require": {
-        "vaites/php-apache-tika": "^0.3.0"
-    },
+    "description": "Symfony Bundle for https://github.com/vaites/php-apache-tika",
+    "type": "symfony-bundle",
+    "keywords": ["apache", "tika", "pdf", "doc", "docx", "ppt", "pptx", "odt", "office", "documents", "ocr", "bundle", "symfony"],
+    "homepage": "https://github.com/welcoMattic/ApacheTikaBundle",
+    "version": "0.1.0",
     "license": "MIT",
     "authors": [
         {
             "name": "welcomattic",
             "email": "mathieu.santostefano@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "vaites/php-apache-tika": "^0.3.0"
+    },
+    "autoload": {
+        "psr-0": { "welcoMattic\\ApacheTikaBundle": "" }
+    },
+    "target-dir": "welcoMattic/ApacheTikaBundle"
 }

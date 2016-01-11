@@ -1,0 +1,11 @@
+parameters:
+    apache_tika:
+        tika_config:
+            tika_path: bin/tika-app.jar
+            tika_host: localhost
+            tika_port: 9998
+
+services:
+    apache_tika.client:
+        class: %apache_tika.config.tika_client_class%
+
