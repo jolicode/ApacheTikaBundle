@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "vaites/php-apache-tika": "^0.3.0"
+        "vaites/php-apache-tika": "dev-master"
     },
     "autoload": {
         "psr-0": { "welcoMattic\\ApacheTikaBundle": "" }
