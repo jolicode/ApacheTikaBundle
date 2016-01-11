@@ -31,14 +31,4 @@ class ApacheTikaExtension extends Extension
         $clientClass = $container->getParameter('apache_tika.config.tika_path') ? 'Vaites\\ApacheTika\\Clients\\CliClient' : 'Vaites\\ApacheTika\\Clients\\WebClient';
         $container->setParameter('apache_tika.config.tika_client_class', $clientClass);
     }
-
-    /**
-     * @param array $config
-     * @param ContainerBuilder $container
-     * @return Configuration
-     */
-    public function getConfiguration(array $config, ContainerBuilder $container)
-    {
-        return new Configuration($container->getParameter('apache_tika'));
-    }
 }
