@@ -55,10 +55,10 @@ apache_tika:
         tika_port: 9998
 ```
 
-Step 4: Instanciate a client
+Step 4: Instantiate a client
 -------------------------
 
-In your controller, you can instanciate a client like this:
+In your controller, you can instantiate a client like this:
 
 ```php
 <?php
