@@ -1,3 +1,5 @@
+This bundle integrates the [php-apache-tika](https://github.com/vaites/php-apache-tika) library into Symfony2.
+
 Installation
 ============
 
@@ -30,7 +32,7 @@ class AppKernel extends Kernel
     {
         $bundles = [
             // ...
-            new welcoMattic\ApacheTikaBundle(),
+            new welcoMattic\ApacheTikaBundle\ApacheTikaBundle(),
             // ...
         ];
     }
