@@ -1,3 +1,7 @@
+[![Latest Stable Version](https://poser.pugx.org/welcomattic/apache-tika-bundle/v/stable)](https://packagist.org/packages/welcomattic/apache-tika-bundle)
+[![Total Downloads](https://poser.pugx.org/welcomattic/apache-tika-bundle/downloads)](https://packagist.org/packages/welcomattic/apache-tika-bundle)
+[![License](https://poser.pugx.org/welcomattic/apache-tika-bundle/license)](https://packagist.org/packages/welcomattic/apache-tika-bundle)
+
 This bundle integrates the [php-apache-tika](https://github.com/vaites/php-apache-tika) library into Symfony2.
 
 Installation
