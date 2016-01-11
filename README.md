@@ -69,6 +69,6 @@ In your controller, you can instantiate a client like this:
 public function indexAction()
 {
     $client = $this->get('apache_tika.client');
-    dump($client->getText('robots.txt'));die;
+    return new Response($client->getText('robots.txt'));
 }
 ```
