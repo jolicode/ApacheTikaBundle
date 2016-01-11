@@ -1,4 +1,5 @@
 [![Latest Stable Version](https://poser.pugx.org/welcomattic/apache-tika-bundle/v/stable)](https://packagist.org/packages/welcomattic/apache-tika-bundle)
+[![Latest Unstable Version](https://poser.pugx.org/welcomattic/apache-tika-bundle/v/unstable)](https://packagist.org/packages/welcomattic/apache-tika-bundle)
 [![Total Downloads](https://poser.pugx.org/welcomattic/apache-tika-bundle/downloads)](https://packagist.org/packages/welcomattic/apache-tika-bundle)
 [![License](https://poser.pugx.org/welcomattic/apache-tika-bundle/license)](https://packagist.org/packages/welcomattic/apache-tika-bundle)
 
