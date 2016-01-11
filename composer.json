@@ -1,0 +1,14 @@
+{
+    "name": "welcomattic/apache-tika-bundle",
+    "description": "Symfony Bundle for (php-apache-tika)[https://github.com/vaites/php-apache-tika]",
+    "require": {
+        "vaites/php-apache-tika": "^0.3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "welcomattic",
+            "email": "mathieu.santostefano@gmail.com"
+        }
+    ]
+}
