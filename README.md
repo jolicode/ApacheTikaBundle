@@ -39,3 +39,32 @@ class AppKernel extends Kernel
 }
 ```
 
+Step 3: Configuration
+-------------------------
+
+Add configuration in the `app/config/config.yml` file:
+
+```yaml
+apache_tika:
+    tika_config:
+        tika_host: 127.0.0.1
+        tika_port: 9998
+```
+
+Step 4: Instanciate a client
+-------------------------
+
+In your controller, you can instanciate a client like this:
+
+```php
+<?php
+
+/**
+ * @Route("/", name="homepage")
+ */
+public function indexAction()
+{
+    $client = $this->get('apache_tika.client');
+    dump($client->getText('robots.txt'));die;
+}
+```
