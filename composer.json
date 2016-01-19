@@ -4,7 +4,6 @@
     "type": "symfony-bundle",
     "keywords": ["apache", "tika", "pdf", "doc", "docx", "ppt", "pptx", "odt", "office", "documents", "ocr", "bundle", "symfony"],
     "homepage": "https://github.com/welcoMattic/ApacheTikaBundle",
-    "version": "0.1.2",
     "license": "MIT",
     "authors": [
         {
