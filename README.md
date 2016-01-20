@@ -17,7 +17,7 @@ Open a command console, enter your project directory and execute the
 following command to download the latest stable version of this bundle:
 
 ```bash
-$ composer require welcoMattic/apache-tika-bundle "~0.1"
+$ composer require jolicode/apache-tika-bundle "~0.2"
 ```
 
 This command requires you to have Composer installed globally, as explained
@@ -39,7 +39,7 @@ class AppKernel extends Kernel
     {
         $bundles = [
             // ...
-            new welcoMattic\ApacheTikaBundle\ApacheTikaBundle(),
+            new Joli\ApacheTikaBundle\ApacheTikaBundle(),
             // ...
         ];
     }
