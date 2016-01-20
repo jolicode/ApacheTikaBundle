@@ -3,4 +3,4 @@
 .php_cs.cache
 /Tests/app/cache
 /Tests/app/logs
-jolici.phar
+/Tests/bin/*.jar
