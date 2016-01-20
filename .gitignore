@@ -1,2 +1,5 @@
-vendor/
-composer.lock
+/composer.lock
+/vendor
+.php_cs.cache
+/Tests/app/cache
+/Tests/app/logs

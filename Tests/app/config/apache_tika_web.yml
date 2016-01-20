@@ -1,0 +1,4 @@
+apache_tika:
+    config:
+        tika_host: localhost
+        tika_port: 9998
