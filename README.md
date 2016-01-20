@@ -1,5 +1,6 @@
 # ApacheTikaBundle
 
+[![Build Status](https://travis-ci.org/jolicode/ApacheTikaBundle.svg?branch=master)](https://travis-ci.org/jolicode/ApacheTikaBundle)
 [![Latest Stable Version](https://poser.pugx.org/jolicode/apache-tika-bundle/v/stable)](https://packagist.org/packages/jolicode/apache-tika-bundle)
 [![Latest Unstable Version](https://poser.pugx.org/jolicode/apache-tika-bundle/v/unstable)](https://packagist.org/packages/jolicode/apache-tika-bundle)
 [![Total Downloads](https://poser.pugx.org/jolicode/apache-tika-bundle/downloads)](https://packagist.org/packages/jolicode/apache-tika-bundle)
