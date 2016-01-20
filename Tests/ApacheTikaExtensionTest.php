@@ -6,12 +6,12 @@
  * (c) Mathieu Santo Stefano--Féron <mathieu.santostefano@gmail.com>
  */
 
-namespace welcoMattic\ApacheTikaBundle\Tests;
+namespace Joli\ApacheTikaBundle\Tests;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use welcoMattic\ApacheTikaBundle\DependencyInjection\ApacheTikaExtension;
+use Joli\ApacheTikaBundle\DependencyInjection\ApacheTikaExtension;
 
 class ApacheTikaExtensionTest extends \PHPUnit_Framework_TestCase
 {

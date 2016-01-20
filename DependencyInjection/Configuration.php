@@ -6,7 +6,7 @@
  * (c) Mathieu Santo Stefano--Féron <mathieu.santostefano@gmail.com>
  */
 
-namespace welcoMattic\ApacheTikaBundle\DependencyInjection;
+namespace Joli\ApacheTikaBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

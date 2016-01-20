@@ -6,7 +6,7 @@
  * (c) Mathieu Santo Stefano--Féron <mathieu.santostefano@gmail.com>
  */
 
-namespace welcoMattic\ApacheTikaBundle;
+namespace Joli\ApacheTikaBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

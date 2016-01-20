@@ -6,12 +6,12 @@
  * (c) Mathieu Santo Stefano--Féron <mathieu.santostefano@gmail.com>
  */
 
-namespace welcoMattic\ApacheTikaBundle\Tests\app;
+namespace Joli\ApacheTikaBundle\Tests\app;
 
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Kernel;
-use welcoMattic\ApacheTikaBundle\ApacheTikaBundle;
+use Joli\ApacheTikaBundle\ApacheTikaBundle;
 
 class AppKernel extends Kernel
 {

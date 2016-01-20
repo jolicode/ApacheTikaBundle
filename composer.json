@@ -25,11 +25,11 @@
     },
     "autoload": {
         "psr-4": {
-            "welcoMattic\\ApacheTikaBundle\\": ""
+            "Joli\\ApacheTikaBundle\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/"
         ]
     },
-    "target-dir": "welcoMattic/ApacheTikaBundle"
+    "target-dir": "Joli/ApacheTikaBundle"
 }
