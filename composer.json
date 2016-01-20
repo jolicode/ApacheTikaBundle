@@ -30,6 +30,5 @@
         "exclude-from-classmap": [
             "/Tests/"
         ]
-    },
-    "target-dir": "Joli/ApacheTikaBundle"
+    }
 }
