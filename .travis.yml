@@ -8,10 +8,17 @@ sudo: false
 cache:
     directories:
         - $HOME/.composer/cache
+        - $HOME/tika
 
 env:
     global:
         - deps=high
+
+before_script:
+    - \[ -f $HOME/tika/tika-app.jar \] || wget -O $HOME/tika/tika-app.jar http://apache.mirrors.ovh.net/ftp.apache.org/dist/tika/tika-app-1.11.jar
+    - \[ -f $HOME/tika/tika-server.jar \] || wget -O $HOME/tika/tika-server.jar -nc http://apache.mirrors.ovh.net/ftp.apache.org/dist/tika/tika-server-1.11.jar
+    - java -jar $HOME/tika/tika-server.jar &
+    - sleep 10
 
 matrix:
     include:
@@ -28,4 +35,4 @@ install:
     - if [ "$deps" != "low" ]; then composer --prefer-source update; fi;
 
 script:
-    - make test
+    - make travis_test

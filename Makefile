@@ -14,3 +14,6 @@ test: get_tika_app start_tika_server
 	ps | grep tika | grep -v grep | awk '{print "kill -9 " $$1}' | sh
 
 tests: test
+
+travis_test:
+	./vendor/bin/phpunit
