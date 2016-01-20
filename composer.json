@@ -3,7 +3,7 @@
     "description": "Symfony Bundle for https://github.com/vaites/php-apache-tika",
     "type": "symfony-bundle",
     "keywords": ["apache", "tika", "pdf", "doc", "docx", "ppt", "pptx", "odt", "office", "documents", "ocr", "bundle", "symfony"],
-    "homepage": "https://github.com/welcoMattic/ApacheTikaBundle",
+    "homepage": "https://github.com/jolicode/ApacheTikaBundle",
     "license": "MIT",
     "authors": [
         {
