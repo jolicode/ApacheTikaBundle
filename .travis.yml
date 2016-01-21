@@ -17,7 +17,7 @@ before_script:
     - \[ -f $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-app.jar \] || wget -O $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-app.jar http://apache.mirrors.ovh.net/ftp.apache.org/dist/tika/tika-app-1.11.jar
     - \[ -f $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-server.jar \] || wget -O $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-server.jar -nc http://apache.mirrors.ovh.net/ftp.apache.org/dist/tika/tika-server-1.11.jar
     - java -jar $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-server.jar &
-    - sleep 10
+    - sleep 5
 
 matrix:
     include:

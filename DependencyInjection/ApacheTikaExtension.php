@@ -27,7 +27,7 @@ class ApacheTikaExtension extends Extension
 
         $container->setParameter('apache_tika.config.tika_path', isset($config['config']['tika_path']) ? $config['config']['tika_path'] : null);
         $container->setParameter('apache_tika.config.tika_host', isset($config['config']['tika_host']) ? $config['config']['tika_host'] : null);
-        $container->setParameter('apache_tika.config.tika_port', isset($config['config']['tika_port']) ? $config['config']['tika_host'] : null);
+        $container->setParameter('apache_tika.config.tika_port', isset($config['config']['tika_port']) ? $config['config']['tika_port'] : null);
 
         if ($container->getParameter('apache_tika.config.tika_path')) {
             $client = new Definition('Vaites\ApacheTika\Clients\CLIClient');
@@ -38,7 +38,7 @@ class ApacheTikaExtension extends Extension
             $client = new Definition('Vaites\ApacheTika\Clients\WebClient');
             $client->setArguments(array(
                 'apache_tika.config.tika_host' => isset($config['config']['tika_host']) ? $config['config']['tika_host'] : '127.0.0.1',
-                'apache_tika.config.tika_port' => isset($config['config']['tika_port']) ? $config['config']['tika_host'] : '9998',
+                'apache_tika.config.tika_port' => isset($config['config']['tika_port']) ? $config['config']['tika_port'] : '9998',
             ));
         }
 
