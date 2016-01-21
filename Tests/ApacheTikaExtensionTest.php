@@ -42,7 +42,7 @@ class ApacheTikaExtensionTest extends \PHPUnit_Framework_TestCase
         $this->loadConfiguration($this->container, 'apache_tika_cli');
         $this->container->compile();
 
-        $this->assertInstanceOf(\Vaites\ApacheTika\Clients\CLIClient::class, $this->container->get('apache_tika.client'));
+        $this->assertInstanceOf('\Vaites\ApacheTika\Clients\CLIClient', $this->container->get('apache_tika.client'));
     }
 
     /**
@@ -53,6 +53,6 @@ class ApacheTikaExtensionTest extends \PHPUnit_Framework_TestCase
         $this->loadConfiguration($this->container, 'apache_tika_web');
         $this->container->compile();
 
-        $this->assertInstanceOf(\Vaites\ApacheTika\Clients\WebClient::class, $this->container->get('apache_tika.client'));
+        $this->assertInstanceOf('\Vaites\ApacheTika\Clients\WebClient', $this->container->get('apache_tika.client'));
     }
 }

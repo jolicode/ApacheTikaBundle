@@ -5,6 +5,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/jolicode/apache-tika-bundle/v/unstable)](https://packagist.org/packages/jolicode/apache-tika-bundle)
 [![Total Downloads](https://poser.pugx.org/jolicode/apache-tika-bundle/downloads)](https://packagist.org/packages/jolicode/apache-tika-bundle)
 [![License](https://poser.pugx.org/jolicode/apache-tika-bundle/license)](https://packagist.org/packages/jolicode/apache-tika-bundle)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/a80176e6-ecea-42a6-a707-2b9dc5d641d3/mini.png)](https://insight.sensiolabs.com/projects/a80176e6-ecea-42a6-a707-2b9dc5d641d3)
 
 This bundle integrates the [php-apache-tika](https://github.com/vaites/php-apache-tika) library into Symfony2.
 
