@@ -55,7 +55,7 @@ Add configuration in the `app/config/config.yml` file:
 
 ```yaml
 apache_tika:
-    tika_config:
+    config:
         tika_host: 127.0.0.1
         tika_port: 9998
 ```
