@@ -1,10 +1,9 @@
 # ApacheTikaBundle
 
-[![Build Status](https://travis-ci.org/jolicode/ApacheTikaBundle.svg?branch=master)](https://travis-ci.org/jolicode/ApacheTikaBundle)
-[![Latest Stable Version](https://poser.pugx.org/jolicode/apache-tika-bundle/v/stable)](https://packagist.org/packages/jolicode/apache-tika-bundle)
-[![Latest Unstable Version](https://poser.pugx.org/jolicode/apache-tika-bundle/v/unstable)](https://packagist.org/packages/jolicode/apache-tika-bundle)
-[![Total Downloads](https://poser.pugx.org/jolicode/apache-tika-bundle/downloads)](https://packagist.org/packages/jolicode/apache-tika-bundle)
-[![License](https://poser.pugx.org/jolicode/apache-tika-bundle/license)](https://packagist.org/packages/jolicode/apache-tika-bundle)
+[![Travis](https://img.shields.io/travis/jolicode/ApacheTikaBundle.svg?style=flat-square)](https://travis-ci.org/jolicode/ApacheTikaBundle)
+[![Latest Stable Version](https://img.shields.io/packagist/v/jolicode/apache-tika-bundle.svg?style=flat-square)](https://packagist.org/packages/jolicode/apache-tika-bundle)
+[![Total Downloads](https://img.shields.io/packagist/dt/jolicode/apache-tika-bundle.svg?style=flat-square)](https://packagist.org/packages/jolicode/apache-tika-bundle)
+[![License](https://img.shields.io/packagist/l/jolicode/apache-tika-bundle.svg?style=flat-square)](https://packagist.org/packages/jolicode/apache-tika-bundle)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/a80176e6-ecea-42a6-a707-2b9dc5d641d3/mini.png)](https://insight.sensiolabs.com/projects/a80176e6-ecea-42a6-a707-2b9dc5d641d3)
 
 This bundle integrates the [php-apache-tika](https://github.com/vaites/php-apache-tika) library into Symfony2.
@@ -50,14 +49,23 @@ class AppKernel extends Kernel
 
 Step 3: Configuration
 -------------------------
+For tika-server :
 
 Add configuration in the `app/config/config.yml` file:
 
 ```yaml
 apache_tika:
-    tika_config:
-        tika_host: 127.0.0.1
-        tika_port: 9998
+    tika_host: 127.0.0.1
+    tika_port: 9998
+```
+
+For tika-app :
+
+Add configuration in the `app/config/config.yml` file:
+
+```yaml
+apache_tika:
+    tika_path: path/to/tika.jar
 ```
 
 Step 4: Instantiate a client

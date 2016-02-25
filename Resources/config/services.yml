@@ -1,6 +1,5 @@
 parameters:
     apache_tika:
-        config:
-            tika_path: %apache_tika.config.tika_path%
-            tika_host: %apache_tika.config.tika_host%
-            tika_port: %apache_tika.config.tika_port%
+        tika_path: %apache_tika.tika_path%
+        tika_host: %apache_tika.tika_host%
+        tika_port: %apache_tika.tika_port%
