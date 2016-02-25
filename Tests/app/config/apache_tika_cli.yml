@@ -1,3 +1,2 @@
 apache_tika:
-    config:
-        tika_path: Tests/bin/tika-app.jar
+    tika_path: Tests/bin/tika-app.jar

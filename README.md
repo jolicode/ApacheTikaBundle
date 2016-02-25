@@ -49,14 +49,23 @@ class AppKernel extends Kernel
 
 Step 3: Configuration
 -------------------------
+For tika-server :
 
 Add configuration in the `app/config/config.yml` file:
 
 ```yaml
 apache_tika:
-    config:
-        tika_host: 127.0.0.1
-        tika_port: 9998
+    tika_host: 127.0.0.1
+    tika_port: 9998
+```
+
+For tika-app :
+
+Add configuration in the `app/config/config.yml` file:
+
+```yaml
+apache_tika:
+    tika_path: path/to/tika.jar
 ```
 
 Step 4: Instantiate a client

@@ -25,21 +25,21 @@ class ApacheTikaExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('apache_tika.config.tika_path', isset($config['config']['tika_path']) ? $config['config']['tika_path'] : null);
-        $container->setParameter('apache_tika.config.tika_host', isset($config['config']['tika_host']) ? $config['config']['tika_host'] : null);
-        $container->setParameter('apache_tika.config.tika_port', isset($config['config']['tika_port']) ? $config['config']['tika_port'] : null);
+        $container->setParameter('apache_tika.tika_path', isset($config['tika_path']) ? $config['tika_path'] : null);
+        $container->setParameter('apache_tika.tika_host', isset($config['tika_host']) ? $config['tika_host'] : null);
+        $container->setParameter('apache_tika.tika_port', isset($config['tika_port']) ? $config['tika_port'] : null);
 
-        if ($container->getParameter('apache_tika.config.tika_path')) {
+        if ($container->getParameter('apache_tika.tika_path')) {
             $client = new Definition('Vaites\ApacheTika\Clients\CLIClient');
-            $client->setArguments(array(
-                'apache_tika.config.tika_path' => isset($config['config']['tika_path']) ? $config['config']['tika_path'] : null,
-            ));
+            $client->setArguments([
+                'apache_tika.tika_path' => $container->getParameter('apache_tika.tika_path') ?: null,
+            ]);
         } else {
             $client = new Definition('Vaites\ApacheTika\Clients\WebClient');
-            $client->setArguments(array(
-                'apache_tika.config.tika_host' => isset($config['config']['tika_host']) ? $config['config']['tika_host'] : '127.0.0.1',
-                'apache_tika.config.tika_port' => isset($config['config']['tika_port']) ? $config['config']['tika_port'] : '9998',
-            ));
+            $client->setArguments([
+                'apache_tika.tika_host' => $container->getParameter('apache_tika.tika_host') ?: '127.0.0.1',
+                'apache_tika.tika_port' => $container->getParameter('apache_tika.tika_port') ?: '9998',
+            ]);
         }
 
         $container->setDefinition('apache_tika.client', $client);
