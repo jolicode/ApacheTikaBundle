@@ -55,8 +55,8 @@ Add configuration in the `app/config/config.yml` file:
 
 ```yaml
 apache_tika:
-    tika_host: 127.0.0.1
-    tika_port: 9998
+    host: 127.0.0.1
+    port: 9998
 ```
 
 For tika-app :
@@ -65,7 +65,7 @@ Add configuration in the `app/config/config.yml` file:
 
 ```yaml
 apache_tika:
-    tika_path: path/to/tika.jar
+    path: path/to/tika.jar
 ```
 
 Step 4: Instantiate a client
