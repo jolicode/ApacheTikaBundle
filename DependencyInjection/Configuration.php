@@ -28,9 +28,9 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('tika_path')->end()
-                ->scalarNode('tika_host')->end()
-                ->scalarNode('tika_port')->end()
+                ->scalarNode('path')->end()
+                ->scalarNode('host')->end()
+                ->scalarNode('port')->end()
             ->end()
         ;
 

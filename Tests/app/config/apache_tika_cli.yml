@@ -1,2 +1,2 @@
 apache_tika:
-    tika_path: Tests/bin/tika-app.jar
+    path: Tests/bin/tika-app.jar

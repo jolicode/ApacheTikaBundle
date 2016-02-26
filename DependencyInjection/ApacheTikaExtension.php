@@ -25,29 +25,23 @@ class ApacheTikaExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('apache_tika.tika_path', isset($config['tika_path']) ? $config['tika_path'] : null);
-        $container->setParameter('apache_tika.tika_host', isset($config['tika_host']) ? $config['tika_host'] : null);
-        $container->setParameter('apache_tika.tika_port', isset($config['tika_port']) ? $config['tika_port'] : null);
+        $path = isset($config['path']) ? $config['path'] : null;
+        $host = isset($config['host']) ? $config['host'] : '127.0.0.1';
+        $port = isset($config['port']) ? $config['port'] : '9998';
 
-        if ($container->getParameter('apache_tika.tika_path')) {
+        if ($path) {
             $client = new Definition('Vaites\ApacheTika\Clients\CLIClient');
             $client->setArguments([
-                'apache_tika.tika_path' => $container->getParameter('apache_tika.tika_path') ?: null,
+                $path,
             ]);
         } else {
             $client = new Definition('Vaites\ApacheTika\Clients\WebClient');
             $client->setArguments([
-                'apache_tika.tika_host' => $container->getParameter('apache_tika.tika_host') ?: '127.0.0.1',
-                'apache_tika.tika_port' => $container->getParameter('apache_tika.tika_port') ?: '9998',
+                $host,
+                $port,
             ]);
         }
 
         $container->setDefinition('apache_tika.client', $client);
-
-        $loader = new YamlFileLoader(
-            $container,
-            new FileLocator(__DIR__ . '/../Resources/config')
-        );
-        $loader->load('services.yml');
     }
 }
