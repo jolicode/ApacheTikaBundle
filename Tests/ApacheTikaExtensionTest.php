@@ -8,10 +8,10 @@
 
 namespace Joli\ApacheTikaBundle\Tests;
 
+use Joli\ApacheTikaBundle\DependencyInjection\ApacheTikaExtension;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use Joli\ApacheTikaBundle\DependencyInjection\ApacheTikaExtension;
 
 class ApacheTikaExtensionTest extends \PHPUnit_Framework_TestCase
 {

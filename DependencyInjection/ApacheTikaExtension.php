@@ -29,15 +29,15 @@ class ApacheTikaExtension extends Extension
 
         if ($path) {
             $client = new Definition('Vaites\ApacheTika\Clients\CLIClient');
-            $client->setArguments([
+            $client->setArguments(array(
                 $path,
-            ]);
+            ));
         } else {
             $client = new Definition('Vaites\ApacheTika\Clients\WebClient');
-            $client->setArguments([
+            $client->setArguments(array(
                 $host,
                 $port,
-            ]);
+            ));
         }
 
         $container->setDefinition('apache_tika.client', $client);
