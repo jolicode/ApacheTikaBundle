@@ -8,7 +8,6 @@ sudo: false
 cache:
     directories:
         - $HOME/.composer/cache
-        - $HOME/build/jolicode/ApacheTikaBundle/Tests/bin
 
 env:
     global:
