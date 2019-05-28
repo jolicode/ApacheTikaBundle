@@ -40,6 +40,7 @@ class ApacheTikaExtension extends Extension
             ));
         }
 
+        $client->setPublic(true);
         $container->setDefinition('apache_tika.client', $client);
     }
 }
