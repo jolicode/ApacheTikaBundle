@@ -23,13 +23,12 @@ before_script:
 
 matrix:
     include:
-        - php: hhvm
-          env: deps=high
         - php: 7.0
           env: deps=low
         - php: 7.1
         - php: 7.2
         - php: 7.3
+          env: deps=high
 
 install:
     - if [ "$deps" = "low" ]; then composer --prefer-source --prefer-lowest update; fi;
