@@ -14,8 +14,8 @@
     "require": {
         "php": "~5.4|^7.0",
         "vaites/php-apache-tika": "~0.3",
-        "symfony/http-kernel": "^2.3|^3.0|^4.0",
-        "symfony/framework-bundle": "^2.3|^3.0|^4.0"
+        "symfony/http-kernel": "^2.8|^3.0|^4.0",
+        "symfony/framework-bundle": "^2.8|^3.0|^4.0"
     },
     "require-dev": {
         "fabpot/php-cs-fixer": "^1.11",
