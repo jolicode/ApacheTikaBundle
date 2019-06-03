@@ -8,7 +8,6 @@ sudo: false
 cache:
     directories:
         - $HOME/.composer/cache
-        - $HOME/build/jolicode/ApacheTikaBundle/Tests/bin
 
 env:
     global:
@@ -16,20 +15,19 @@ env:
 
 before_script:
     - if [ "$TRAVIS_PHP_VERSION" != "hhvm" ]; then phpenv config-rm xdebug.ini; fi
-    - \[ -f $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-app.jar \] || wget -O $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-app.jar http://archive.apache.org/dist/tika/tika-app-1.11.jar
-    - \[ -f $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-server.jar \] || wget -O $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-server.jar -nc http://archive.apache.org/dist/tika/tika-server-1.11.jar
+    - \[ -f $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-app.jar \] || wget -O $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-app.jar http://archive.apache.org/dist/tika/tika-app-1.21.jar
+    - \[ -f $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-server.jar \] || wget -O $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-server.jar -nc http://archive.apache.org/dist/tika/tika-server-1.21.jar
     - java -jar $HOME/build/jolicode/ApacheTikaBundle/Tests/bin/tika-server.jar &
     - sleep 5
 
 matrix:
     include:
-        - php: hhvm
-        - php: 5.4
-        - php: 5.5
-        - php: 5.6
-          env: deps=high
         - php: 7.0
           env: deps=low
+        - php: 7.1
+        - php: 7.2
+        - php: 7.3
+          env: deps=high
 
 install:
     - if [ "$deps" = "low" ]; then composer --prefer-source --prefer-lowest update; fi;
