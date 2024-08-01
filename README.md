@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/packagist/l/jolicode/apache-tika-bundle.svg?style=flat-square)](https://packagist.org/packages/jolicode/apache-tika-bundle)
 [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/a80176e6-ecea-42a6-a707-2b9dc5d641d3.svg?style=flat-square)](https://insight.sensiolabs.com/projects/a80176e6-ecea-42a6-a707-2b9dc5d641d3)
 
-This bundle integrates the [php-apache-tika](https://github.com/vaites/php-apache-tika) library into Symfony2.
+This bundle integrates the [php-apache-tika](https://github.com/vaites/php-apache-tika) library into Symfony.
 
 Installation
 ============
