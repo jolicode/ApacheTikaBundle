@@ -21,10 +21,10 @@ class Configuration implements ConfigurationInterface
     /**
      * {@inheritdoc}
      */
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('apache_tika');
+        $treeBuilder = new TreeBuilder('apache_tika');
+        $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
             ->children()
